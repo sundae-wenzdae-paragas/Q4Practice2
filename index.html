@@ -18,27 +18,24 @@
     <button class="btn btn-info" onclick="teamRank()">Rank</button>
 
     <script>
-       
-        
-function teamRank (){
+        function teamRank(){
 
-var message = "";
+        var rank = "1st";
+        var message = "";
 
-switch (true){
-case (rank === "1st"): //compare
-message = "Champions!";
-break;
-case (rank === "2nd"): //compare
-message = "Second Placer!";
-break;
-case (rank === "3rd"): //compare
-message = "Third Placer!";
-break;
-case (rank === "4th"): //compare
-message = "Fourth Placer!";
-break;
-default:
-message = "Rank not available at this time.";
+        switch (true){ //you can also use false but for a slightly different function
+            case (rank === "1st"): //to compare
+            message = "Champions!";
+            break;
+            case (rank === "2nd"): //to compare
+            message = "Second Placers";
+            break;
+            case (rank === "3rd"): //to compare
+            message = "Third Placers!";
+            break;
+            case (rank === "4th"): //to compare
+            amessage = "Fourth Placers";
+            break;
 
             default:
                 message = "Rank not available at this time.";
