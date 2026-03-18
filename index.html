@@ -13,11 +13,33 @@
 </style>
 </head>
 <body>
-    <h1>Switch Statement</h1>
+    <h1><strong>Switch Statement/ Studynotes</strong></h1>
 
     <button class="btn btn-info" onclick="teamRank()">Rank</button>
 
     <script>
+
+        var rank = "1st";
+
+        switch (true){ //you can also use false but for a slightly different function
+            case (rank === "1st"): //compare
+            alert("Champions!");
+            break;
+            case (rank === "2nd"): //compare
+            alert("Second Placers");
+            break;
+            case (rank === "3rd"): //compare
+            alert("Third Placers!");
+            break;
+            case (rank === "4th"): //compare
+            alert("Fourth Placers");
+            break;
+
+            default:
+                alert("Rank not available at this time.");
+
+        }
+
         let team = "Yellow"; //this is a string
 
         switch (team){
