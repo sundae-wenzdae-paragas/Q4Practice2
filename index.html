@@ -20,23 +20,24 @@
     <script>
 
         var rank = "1st";
+        var message = "";
 
         switch (true){ //you can also use false but for a slightly different function
-            case (rank === "1st"): //compare
-            alert("Champions!");
+            case (rank === "1st"): //to compare
+            message = "Champions!";
             break;
-            case (rank === "2nd"): //compare
-            alert("Second Placers");
+            case (rank === "2nd"): //to compare
+            message = "Second Placers";
             break;
-            case (rank === "3rd"): //compare
-            alert("Third Placers!");
+            case (rank === "3rd"): //to compare
+            message = "Third Placers!";
             break;
-            case (rank === "4th"): //compare
-            alert("Fourth Placers");
+            case (rank === "4th"): //to compare
+            amessage = "Fourth Placers";
             break;
 
             default:
-                alert("Rank not available at this time.");
+                message = "Rank not available at this time.";
 
         }
 
